@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onDestroy, onMount, setContext, createEventDispatcher } from 'svelte';
+	import { onMount, onDestroy, setContext, createEventDispatcher } from 'svelte';
 	import L from 'leaflet';
 	import 'leaflet/dist/leaflet.css';
 
@@ -10,7 +10,7 @@
 	const dispatch = createEventDispatcher();
 
 	let map: L.Map | undefined;
-	let mapElement: HTMLDivElement;
+	let mapElement: HTMLElement;
 
 	onMount(() => {
 		if (!bounds && (!view || !zoom)) {
