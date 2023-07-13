@@ -1,8 +1,11 @@
-<h1 class="text-3xl font-bold underline">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import '../app.css';
+	import type { LatLngExpression } from 'leaflet';
+	import Leaflet from '$lib/Leaflet.svelte';
 
-<style lang="postcss">
-	:global(html) {
-		background-color: theme(colors.purple.100);
-	}
-</style>
+	const initialView: LatLngExpression = [51.514244, 7.468429]; // Dortmund, Germany
+</script>
+
+<div class="w-full h-screen">
+	<Leaflet view={initialView} zoom={12} />
+</div>
