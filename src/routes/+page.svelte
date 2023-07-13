@@ -3,6 +3,7 @@
 	import type { LatLngExpression } from 'leaflet';
 	import Leaflet from '$lib/Leaflet.svelte';
 	import Marker from '$lib/Marker.svelte';
+	import Popup from '$lib/Popup.svelte';
 
 	const initialView: LatLngExpression = [51.514244, 7.468429]; // Dortmund, Germany
 	const markerLocations: Array<LatLngExpression> = [
@@ -27,6 +28,8 @@
 						transform="translate(0 -2.618)"
 					/>
 				</svg>
+
+				<Popup>Like & Subscribe!</Popup>
 			</Marker>
 		{/each}
 	</Leaflet>
