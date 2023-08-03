@@ -1,22 +1,14 @@
-# create-svelte
+# Leaflet in SvelteKit with renderless components
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is a very simple demo of how to use Leaflet in SvelteKit with renderless components. The ideas behind this implementation are described in the video.
 
-## Creating a project
+[![Leaflet in SvelteKit](http://img.youtube.com/vi/JFctWXEzFZw/0.jpg)](http://www.youtube.com/watch?v=JFctWXEzFZw 'Leaflet in SvelteKit')
 
-If you're seeing this, you've probably already done this step. Congrats!
+The project was bootstrapped with the SvelteKit CLI and [Tailwind was added](https://tailwindcss.com/docs/guides/sveltekit) (optional).
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Note that this is not a complete Leaflet implementation. Use it as inspiration or starting point to implement whatever you really need from Leaflet in your project!
 
 ## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
